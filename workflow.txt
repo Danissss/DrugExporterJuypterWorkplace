@@ -1,0 +1,20 @@
+1. combine all csv file
+2. use CleanData.py to keep the unique and duplicate
+2.1 at /Users/xuan/Desktop/TransporterProject/ALL_Cleaned/ALL/CleanData.py
+3. use duplicate.csv to resolve in duplicate_resolve_folder 
+4. duplicate.py can save amount of time for checking data
+5. append resolved_duplicate to unique.csv
+6. manually resolve non_resolved_duplicate
+7. mark all active to inhibitor and inactive to non-inhibitor (due to chembl annotation)
+8. convert to two file: inhibitor and substrate
+8.1 at /Users/xuan/Desktop/TransporterProject/ALL_Cleaned/convert_to_two_no_conflict/parse_file_two_dataset.py
+9. extract molecular feature and train
+
+
+note: some of the file in IMPORT TRANSPORTER folder has already been cleaned by CleanData.py at /Users/xuan/Desktop/TransporterProject/ALL_Cleaned/ALL/CleanData.py; Double check
+
+
+Make sure the file for convert_to_two_ folder is cleaned (convert active to inhibitor and non-active to non-inhibitor, remove the inducer|inhibitor combination)
+
+For including the duplicate (to prove that including duplicate (unresolved molecule) could worsen the performance)
+Use CleanData.py; manually add the duplicate to non_duplicate 
